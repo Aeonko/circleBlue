@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/activity_main_text_field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/activity_main_tf_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_red_selector"
+        android:onClick="rngButtonClicked"
+        android:text="@string/activity_main_rng_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/am_lang_button"
+        app:layout_constraintEnd_toEndOf="@+id/am_lang_button"
+        app:layout_constraintStart_toStartOf="@+id/am_lang_button" />
+
+    <Button
+        android:id="@+id/am_lang_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_green_selector"
+        android:onClick="setLocaleLanguageButton"
+        android:text="-"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_blue_selector"
+        android:onClick="loginButtonClicked"
+        android:text="@string/activity_main_login_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageview_lenght"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_main_text_field"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <TextView
+        android:id="@+id/textView_lenght"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/am_tv_between_4_14_chars"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview_lenght"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageview_lenght"
+        app:layout_constraintTop_toTopOf="@+id/imageview_lenght" />
+
+    <ImageView
+        android:id="@+id/imageView_letter_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/imageview_lenght"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_lenght"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <ImageView
+        android:id="@+id/imageView_char_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_letter_a"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_letter_a"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <ImageView
+        android:id="@+id/imageView_question_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_char_seven"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_char_seven"
+        app:srcCompat="@drawable/ic_baseline_check_24" />
+
+    <ImageView
+        android:id="@+id/imageView_contains_char_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView_question_mark"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_question_mark"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <TextView
+        android:id="@+id/textView_letter_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/am_tv_letters_a_check"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_letter_a"
+        app:layout_constraintEnd_toEndOf="@+id/textView_lenght"
+        app:layout_constraintStart_toStartOf="@+id/textView_lenght"
+        app:layout_constraintTop_toTopOf="@+id/imageView_letter_a" />
+
+    <TextView
+        android:id="@+id/textView_char_seven"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/am_tv_character_number_7"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_char_seven"
+        app:layout_constraintEnd_toEndOf="@+id/textView_letter_a"
+        app:layout_constraintStart_toStartOf="@+id/textView_letter_a"
+        app:layout_constraintTop_toTopOf="@+id/imageView_char_seven" />
+
+    <TextView
+        android:id="@+id/textView_question_mark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/am_tv_contains_question_mark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_question_mark"
+        app:layout_constraintEnd_toEndOf="@+id/textView_char_seven"
+        app:layout_constraintStart_toStartOf="@+id/textView_char_seven"
+        app:layout_constraintTop_toTopOf="@+id/imageView_question_mark" />
+
+    <TextView
+        android:id="@+id/textView_contains_char_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/am_tv_b_is_contained_char_before_it_is_not_number"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_contains_char_b"
+        app:layout_constraintEnd_toEndOf="@+id/textView_question_mark"
+        app:layout_constraintStart_toStartOf="@+id/textView_question_mark"
+        app:layout_constraintTop_toTopOf="@+id/imageView_contains_char_b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

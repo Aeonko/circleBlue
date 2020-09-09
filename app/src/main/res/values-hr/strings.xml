@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">circleBlue</string>
+    <string name="activity_main_tf_hint">Unesite tekst</string>
+    <string name="activity_main_login_button">Prijavite se</string>
+    <string name="activity_main_rng_button">Random dugme</string>
+    <string name="activity_random_number_generation_button_random">Generiraj slučajni broj</string>
+    <string name="activity_random_number_generator">Natrag u glavni meni</string>
+    <string name="pick_language">Odaberi jezik</string>
+    <string name="language_english">Engleski</string>
+    <string name="language_croatian">Hrvatski</string>
+    <string name="something_went_wrong_language_not_changed">Nešto nije u redu jezik se nije promijenio</string>
+    <string name="am_tv_between_4_14_chars">Dužina je između 4 i 14 znakova</string>
+    <string name="am_tv_letters_a_check">Slovo \'a\' (ili \'A \') pojavljuje se 2 ili više puta</string>
+    <string name="am_tv_character_number_7">Točno jedan karakter 7</string>
+    <string name="am_tv_contains_question_mark">Ne sadrži znak pitanja (\'? \')</string>
+    <string name="am_tv_b_is_contained_char_before_it_is_not_number">Sadrži karakter \'b\' i znak prije njega nije broj</string>
+    <string name="height">Visina : </string>
+    <string name="mass">Masa : </string>
+    <string name="name">Ime : </string>
+    <string name="birth_year">"Godina rođenja : "</string>
+    <string name="eye_color">"Boja očiju : "</string>
+    <string name="gender">"Spol : "</string>
+    <string name="hair_color">"Boja kose : "</string>
+    <string name="homeworld">"Domovina : "</string>
+    <string name="skin_color">"Boja kože : "</string>
+    <string name="movies">Filmovi</string>
+    <string name="press_to_generate_random_number">Pritisnite dugme za generiranje slučajnog broja</string>
+    <string name="error_message">Nešto je pošlo po zlu, provjerite internetsku vezu i pokušajte ponovo</string>
+    <string name="movie">Film: </string>
+    <string name="episode"> Ep. </string>
+    <string name="validating_please_wait">Provjera validnosti, pričekajte…</string>
+    <string name="what_went_wrong">Šta nije uredu :</string>
+    <string name="range_4_14">"-Nije u opsegu 4 .. 14"</string>
+    <string name="letter_a_deosnt_appear">-Slovo a ili A ne pojavljuje se 2 ili više puta</string>
+    <string name="doesnt_contain_number7">-Ne sadrži broj 7</string>
+    <string name="before_b_cant_be_a_number">-Ispred b ne može biti broj</string>
+    <string name="shouldnt_contain_char_question_mark">-Sadrži karakter ?</string>
+    <string name="try_again">Pokušajte ponovo</string>
+</resources>
